@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE359B8E1E44D31700A7BB17 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE359B8D1E44D31700A7BB17 /* main.cpp */; };
+		FE359B971E44D34C00A7BB17 /* WordController.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE359B951E44D34C00A7BB17 /* WordController.cpp */; };
+		FE359B991E44D4F500A7BB17 /* WordRunner.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FE359B981E44D4F500A7BB17 /* WordRunner.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		FE359B8A1E44D31700A7BB17 /* Wordzz */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Wordzz; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE359B8D1E44D31700A7BB17 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		FE359B951E44D34C00A7BB17 /* WordController.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordController.cpp; sourceTree = "<group>"; };
+		FE359B961E44D34C00A7BB17 /* WordController.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WordController.hpp; sourceTree = "<group>"; };
+		FE359B981E44D4F500A7BB17 /* WordRunner.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordRunner.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +44,7 @@
 		FE359B811E44D31700A7BB17 = {
 			isa = PBXGroup;
 			children = (
+				FE359B941E44D32800A7BB17 /* Controller */,
 				FE359B8C1E44D31700A7BB17 /* Wordzz */,
 				FE359B8B1E44D31700A7BB17 /* Products */,
 			);
@@ -57,9 +61,18 @@
 		FE359B8C1E44D31700A7BB17 /* Wordzz */ = {
 			isa = PBXGroup;
 			children = (
-				FE359B8D1E44D31700A7BB17 /* main.cpp */,
 			);
 			path = Wordzz;
+			sourceTree = "<group>";
+		};
+		FE359B941E44D32800A7BB17 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE359B951E44D34C00A7BB17 /* WordController.cpp */,
+				FE359B961E44D34C00A7BB17 /* WordController.hpp */,
+				FE359B981E44D4F500A7BB17 /* WordRunner.cpp */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -119,7 +132,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE359B8E1E44D31700A7BB17 /* main.cpp in Sources */,
+				FE359B971E44D34C00A7BB17 /* WordController.cpp in Sources */,
+				FE359B991E44D4F500A7BB17 /* WordRunner.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
